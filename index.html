@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rajkumar Nagarethinam - Engineering Manager</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Rajkumar Nagarethinam - Experienced Engineering Manager with expertise in backend systems, microservices, and cloud infrastructure." />
+  <meta name="keywords" content="Rajkumar, Engineering Manager, Java, Spring Boot, Backend Developer, GCP, AWS, Resume, Portfolio" />
+  <meta name="author" content="Rajkumar Nagarethinam" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --bg-light: #f0f4f8;
+      --text-light: #333;
+      --bg-dark: #1c1c1c;
+      --text-dark: #eee;
+      --primary: #0073e6;
+      --accent: #e6f2ff;
+    }
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
-      background: #f4f4f4;
-      color: #333;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: background 0.3s, color 0.3s;
     }
     .container {
       max-width: 960px;
-      margin: auto;
-      padding: 20px;
-      background: #fff;
+      margin: 40px auto;
+      padding: 30px;
+      background: #ffffff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
     }
     h1, h2, h3 {
-      color: #222;
+      color: var(--primary);
     }
     a {
-      color: #0077cc;
+      color: var(--primary);
       text-decoration: none;
     }
     a:hover {
@@ -34,118 +47,98 @@
       margin-bottom: 40px;
     }
     .section h2 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
     }
     ul {
       padding-left: 20px;
     }
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 20px;
-    }
     .contact-info a {
-      margin-bottom: 5px;
-    }
-    .job-title {
-      font-weight: bold;
-      margin-top: 15px;
-    }
-    .date-location {
-      font-style: italic;
-      color: #666;
-      font-size: 14px;
+      display: inline-block;
+      margin: 5px 15px 5px 0;
     }
     .skills {
       display: flex;
       flex-wrap: wrap;
     }
     .skills span {
-      background: #eee;
-      padding: 5px 10px;
-      margin: 5px;
-      border-radius: 5px;
+      background: var(--accent);
+      color: var(--primary);
+      padding: 6px 12px;
+      margin: 6px 6px 0 0;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    .dark-mode {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+    .dark-mode .container {
+      background: #2c2c2c;
+    }
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+        margin: 20px;
+      }
     }
   </style>
 </head>
 <body>
+  <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
   <div class="container">
     <h1>Rajkumar Nagarethinam</h1>
     <p><strong>Engineering Manager</strong> based in Bangalore/Chennai, India</p>
-    
+
     <div class="contact-info">
-      <a href="mailto:softnrajkumar1994@gmail.com">softnrajkumar1994@gmail.com</a>
-      <a href="tel:+918903425725">+91 89034 25725</a>
-      <a href="https://leetcode.com/softnrajkumar1994/" target="_blank">LeetCode</a>
-      <a href="https://www.linkedin.com/in/raj-kumar-5ba700103/" target="_blank">LinkedIn</a>
+      <a href="mailto:softnrajkumar1994@gmail.com">📧 Email</a>
+      <a href="https://leetcode.com/softnrajkumar1994/" target="_blank">💻 LeetCode</a>
+      <a href="https://www.linkedin.com/in/raj-kumar-5ba700103/" target="_blank">🔗 LinkedIn</a>
+      <a href="RAJKUMAR-NAGARETHINAM-FlowCV-Resume-20240414.pdf" download>📄 Download Resume (PDF)</a>
     </div>
 
     <div class="section">
-      <h2>Professional Experience</h2>
-
-      <div class="job-title">Engineering Manager, Nobroker.in</div>
-      <div class="date-location">Oct 2023 – Present, Bangalore</div>
+      <h2>Projects</h2>
       <ul>
-        <li>Overseeing engineering operations across Home Services, Packers and Movers, and ONDC.</li>
-        <li>Leading a 25-member team; managing sprint planning, code reviews, and deployments.</li>
-        <li><strong>Tech:</strong> Java, Spring Boot, MongoDB, MySQL, ElasticSearch, GCP, Redis, Kafka, InfluxDB, Prometheus</li>
-      </ul>
-
-      <div class="job-title">Lead Software Engineer, Nobroker.in</div>
-      <div class="date-location">Jul 2022 – Oct 2023, Bangalore</div>
-      <ul>
-        <li>Built ONDC-based e-commerce platform processing 1500+ daily orders.</li>
-        <li>Integrated WhatsApp/Telegram sync system and backend monitoring platform.</li>
-        <li><strong>Tech:</strong> Spring Boot, Java, MongoDB, MySQL, Redis, Kafka, GCP</li>
-      </ul>
-
-      <div class="job-title">Senior Software Engineer, Nobroker.in</div>
-      <div class="date-location">Nov 2020 – Jun 2022, Bangalore</div>
-      <ul>
-        <li>Integrated OnGrid-based BGV system and internal wallet service.</li>
-        <li>Developed lead management/auction system for improved revenue.</li>
-      </ul>
-
-      <div class="job-title">Senior Software Engineer, Pickyourtrail.com</div>
-      <div class="date-location">Mar 2018 – Oct 2020, Chennai</div>
-      <ul>
-        <li>Built travel microservices using Spring Boot and AWS APIs (Agoda, Amadeus).</li>
-        <li>Set up CI/CD using Jenkins and Docker. Migrated legacy codebase.</li>
-      </ul>
-
-      <div class="job-title">Member of Technical Staff, Zoho</div>
-      <div class="date-location">Jul 2015 – Feb 2018, Chennai</div>
-      <ul>
-        <li>Built Dropbox-Zoho Docs sync service, and message sync using Telegram API.</li>
-        <li>Contributed to metric aggregation using D3.js.</li>
+        <li><strong>ONDC Commerce Platform:</strong> Built and scaled for 1500+ daily orders.</li>
+        <li><strong>BGV Integration:</strong> Seamless onboarding with OnGrid.</li>
+        <li><strong>Lead Auction System:</strong> Increased conversion in service assignments.</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Skills</h2>
       <div class="skills">
-        <span>Java</span><span>Spring Boot</span><span>Spring MVC</span>
-        <span>Kafka</span><span>ElasticSearch</span><span>MySQL</span>
-        <span>MongoDB</span><span>Redis</span><span>GCP</span>
-        <span>AWS</span><span>InfluxDB</span><span>Docker</span>
+        <span>Java</span><span>Spring Boot</span><span>Kafka</span><span>ElasticSearch</span>
+        <span>MySQL</span><span>MongoDB</span><span>Redis</span><span>GCP</span>
+        <span>AWS</span><span>InfluxDB</span><span>Docker</span><span>Spring MVC</span>
       </div>
     </div>
 
     <div class="section">
       <h2>Education</h2>
-      <p><strong>BE - Computer Science and Engineering</strong><br>
-      Institute Of Road and Transport Technology, Erode<br>
-      May 2011 – May 2015</p>
+      <p><strong>BE - Computer Science</strong><br />Institute Of Road and Transport Technology, Erode<br />May 2011 – May 2015</p>
     </div>
 
     <div class="section">
       <h2>Awards</h2>
       <ul>
-        <li>Consistent Performer – Nobroker (2023)</li>
-        <li>Star Performer – Nobroker (2022)</li>
-        <li>Most Valuable Trooper – Pickyourtrail (2020)</li>
+        <li>🏅 Consistent Performer – Nobroker (2023)</li>
+        <li>🌟 Star Performer – Nobroker (2022)</li>
+        <li>🎖️ Most Valuable Trooper – Pickyourtrail (2020)</li>
       </ul>
     </div>
 
@@ -154,5 +147,11 @@
       <p>English, Tamil</p>
     </div>
   </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 </body>
 </html>
