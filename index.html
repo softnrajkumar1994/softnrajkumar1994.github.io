@@ -12,8 +12,6 @@
     :root {
       --bg-light: #f0f4f8;
       --text-light: #333;
-      --bg-dark: #1c1c1c;
-      --text-dark: #eee;
       --primary: #0073e6;
       --accent: #e6f2ff;
     }
@@ -23,7 +21,6 @@
       padding: 0;
       background: var(--bg-light);
       color: var(--text-light);
-      transition: background 0.3s, color 0.3s;
     }
     .container {
       max-width: 960px;
@@ -70,25 +67,6 @@
       border-radius: 20px;
       font-size: 14px;
     }
-    .dark-mode {
-      background: var(--bg-dark);
-      color: var(--text-dark);
-    }
-    .dark-mode .container {
-      background: #2c2c2c;
-    }
-    .toggle-btn {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: var(--primary);
-      color: white;
-      border: none;
-      padding: 8px 12px;
-      border-radius: 6px;
-      cursor: pointer;
-      z-index: 1000;
-    }
     @media (max-width: 600px) {
       .container {
         padding: 20px;
@@ -98,7 +76,6 @@
   </style>
 </head>
 <body>
-  <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
   <div class="container">
     <h1>Rajkumar Nagarethinam</h1>
     <p><strong>Engineering Manager</strong> based in Bangalore/Chennai, India</p>
@@ -107,7 +84,26 @@
       <a href="mailto:softnrajkumar1994@gmail.com">📧 Email</a>
       <a href="https://leetcode.com/softnrajkumar1994/" target="_blank">💻 LeetCode</a>
       <a href="https://www.linkedin.com/in/raj-kumar-5ba700103/" target="_blank">🔗 LinkedIn</a>
-      <a href="RAJKUMAR-NAGARETHINAM-FlowCV-Resume-20240414.pdf" download>📄 Download Resume (PDF)</a>
+    </div>
+
+    <div class="section">
+      <h2>Professional Experience</h2>
+      <ul>
+        <li><strong>Engineering Manager – NoBroker (Oct 2023 – Present)</strong><br>
+        Overseeing engineering operations across Home Services, Packers, and Movers verticals, including ONDC, to ensure streamlined functionality and optimal efficiency. Leading a team of 25 developers, responsible for sprint planning, code review, and deployment processes.</li>
+
+        <li><strong>Lead Software Engineer – NoBroker (Jul 2022 – Oct 2023)</strong><br>
+        Spearheaded development of an e-commerce platform using ONDC framework, processing 1500+ orders/day. Implemented payment systems, seller settlements, and invoicing. Built a robust message sync system for WhatsApp and Telegram. Led backend efforts across multiple verticals.</li>
+
+        <li><strong>Senior Software Engineer – NoBroker (Nov 2020 – Jun 2022)</strong><br>
+        Developed a background verification system using OnGrid. Integrated wallet services for rewards and claims. Built a lead auction and broadcast system, contributing to increased revenue and internal promotion.</li>
+
+        <li><strong>Senior Software Engineer – Pickyourtrail (Mar 2018 – Oct 2020)</strong><br>
+        Designed mobile microservices integrating APIs (Agoda, Amadeus, Google Translate). Built customer-friendly feed systems and transitioned legacy projects to Spring Boot. Set up CI/CD pipelines using Jenkins and Docker.</li>
+
+        <li><strong>Member of Technical Staff – Zoho (Jul 2015 – Feb 2018)</strong><br>
+        Developed Dropbox–Zoho Docs sync services. Engineered modules for metric aggregation and chat service integrations. Used D3.js for internal visualization tools and contributed to major backend systems for SalesIQ and Zoho Docs.</li>
+      </ul>
     </div>
 
     <div class="section">
@@ -147,11 +143,5 @@
       <p>English, Tamil</p>
     </div>
   </div>
-
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-    }
-  </script>
 </body>
 </html>
